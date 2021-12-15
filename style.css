@@ -1,0 +1,347 @@
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    .padre {
+                                        width: 99%;
+                                        height: 400px;
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-template-rows: repeat(6, 1fr);
+                                        grid-template-areas: "header header" "lista lista" "foto foto" "enlaces enlaces""mail redes""footer footer";
+                                        margin: 10px auto;
+                                    }
+                                    
+                                    .padre1 {
+                                        width: 99%;
+                                        height: 400px;
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-template-rows: repeat(6, 1fr);
+                                        grid-template-areas: "header header" "lista lista" "foto foto" "productos productos" "mail redes""footer footer";
+                                        margin: 10px auto;
+                                    }
+                                    
+                                    .hamburguesa {
+                                        display: none;
+                                    }
+                                    
+                                    .productos {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: space-around;
+                                        padding: 1%;
+                                        grid-area: productos;
+                                    }
+                                    
+                                    .productos img {
+                                        border: solid green;
+                                        margin-bottom: 2%;
+                                    }
+                                    
+                                    .productos img:hover {
+                                        height: 110%;
+                                        width: 110%;
+                                        position: relative;
+                                    }
+                                    
+                                    .header {
+                                        display: flex;
+                                        flex-direction: row;
+                                        grid-area: header;
+                                    }
+                                    
+                                    .enlaces {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        padding: 1.5rem;
+                                        grid-area: enlaces;
+                                    }
+                                    
+                                    .enlaces img {
+                                        width: 40%;
+                                        margin: 0 30%;
+                                    }
+                                    
+                                    h3 {
+                                        color: green;
+                                        text-align: center;
+                                    }
+                                    
+                                    .lista {
+                                        background-color: greenyellow;
+                                        grid-area: lista;
+                                    }
+                                    
+                                    nav ul {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                    }
+                                    
+                                    li {
+                                        margin: 1rem;
+                                        list-style: none;
+                                    }
+                                    
+                                    li a {
+                                        color: green;
+                                        font-size: 110%;
+                                        text-decoration: none;
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    nav li a:hover {
+                                        color: greenyellow;
+                                        background-color: darkblue;
+                                    }
+                                    
+                                    .foto {
+                                        grid-area: foto;
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                    
+                                    .mail {
+                                        background-color: sandybrown;
+                                        display: flex;
+                                        flex-direction: row;
+                                        grid-area: mail;
+                                        padding: 4rem;
+                                    }
+                                    
+                                    .mail div {
+                                        margin: 0.5rem;
+                                    }
+                                    
+                                    .redes div {
+                                        margin: 1rem;
+                                        align-items: stretch;
+                                        display: flex;
+                                        flex-direction: row;
+                                    }
+                                    
+                                    .redes {
+                                        background-color: sandybrown;
+                                        display: flex;
+                                        flex-direction: row;
+                                        grid-area: redes;
+                                    }
+                                    
+                                    footer {
+                                        text-align: center;
+                                        grid-area: footer;
+                                    }
+                                    
+                                    .redes img {
+                                        margin: -30% 350%;
+                                        margin: 3rem;
+                                    }
+                                    
+                                    .logo {
+                                        width: 30%;
+                                        justify-content: center;
+                                        margin-left: 20%;
+                                        margin-top: 5%;
+                                    }
+                                    
+                                    .login {
+                                        width: 20%;
+                                        display: flex;
+                                        margin-left: 70%;
+                                        margin-bottom: 0%;
+                                        margin-top: 1%;
+                                    }
+                                    
+                                    .busquedalupa {
+                                        margin-left: 10%;
+                                        margin-top: 3%;
+                                        width: 180%;
+                                    }
+                                    
+                                    .carrito {
+                                        width: 30%;
+                                        justify-content: end;
+                                        margin-left: 180%;
+                                        margin-top: 2%;
+                                    }
+                                    
+                                    body {
+                                        max-width: 100%;
+                                        overflow-x: hidden;
+                                    }
+                                    
+                                    @media screen and (max-width:768px) {
+                                        .padre {
+                                            width: 99%;
+                                            height: 400px;
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            grid-template-rows: repeat(4, 1fr);
+                                            grid-template-areas: "header header" "lista lista" "foto foto""mail redes";
+                                            margin: 10px auto;
+                                        }
+                                        .padre1 {
+                                            width: 99%;
+                                            height: 400px;
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            grid-template-rows: repeat(5, 1fr);
+                                            grid-template-areas: "header header" "lista lista" "foto foto" "productos productos" "mail redes";
+                                            margin: 10px auto;
+                                        }
+                                        .enlaces {
+                                            display: none;
+                                        }
+                                        .login {
+                                            width: 10%;
+                                            margin-right: 200%;
+                                            display: flex;
+                                        }
+                                        nav ul {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: flex-start;
+                                        }
+                                        .logo {
+                                            width: 20%;
+                                            justify-content: center;
+                                            margin-left: 20%;
+                                            margin-top: 5%;
+                                        }
+                                        .carrito {
+                                            width: 30%;
+                                            justify-content: start;
+                                            margin-left: 180%;
+                                            margin-top: 2%;
+                                        }
+                                        .login {
+                                            width: 20%;
+                                            display: flex;
+                                            margin-left: 70%;
+                                            margin-bottom: 0%;
+                                            margin-top: 1%;
+                                        }
+                                        .redes img {
+                                            margin: -30% 350%;
+                                            margin: 3rem -1rem;
+                                        }
+                                        footer {
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width:320px) {
+                                        .padre {
+                                            width: 99%;
+                                            height: 200px;
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            grid-template-rows: repeat(4, 1fr);
+                                            grid-template-areas: "header header" "foto foto" "enlace enlace""footer footer";
+                                            margin: 10px auto;
+                                        }
+                                        .padre1 {
+                                            width: 99%;
+                                            height: 200px;
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                            grid-template-rows: repeat(4, 1fr);
+                                            grid-template-areas: "header header" "foto foto" "productos productos" "footer footer";
+                                            margin: 10px auto;
+                                        }
+                                        .busquedalupa {
+                                            margin-left: 30%;
+                                            margin-top: 3%;
+                                            width: 180%;
+                                        }
+                                        .lista {
+                                            display: none;
+                                        }
+                                        .logo {
+                                            display: none;
+                                        }
+                                        .hamburguesa ul {
+                                            display: none;
+                                        }
+                                        input:checked~ul {
+                                            display: block;
+                                        }
+                                        .mail {
+                                            display: none;
+                                        }
+                                        .redes {
+                                            display: none;
+                                        }
+                                        input {
+                                            display: none;
+                                        }
+                                        .hamburguesa label {
+                                            box-sizing: border-box;
+                                            display: inline-block;
+                                            border: 1px solid black;
+                                            border-radius: 5px;
+                                            width: 20px;
+                                            height: 20px;
+                                            line-height: 20px;
+                                            font-weight: bold;
+                                            text-align: center;
+                                            user-select: none;
+                                        }
+                                        .hamburguesa {
+                                            display: unset;
+                                            position: absolute;
+                                        }
+                                        .hamburguesa li {
+                                            display: block;
+                                            background: greenyellow;
+                                            margin: 0;
+                                            padding: 10px;
+                                            list-style: none;
+                                            border-bottom: 1px solid grey;
+                                        }
+                                        .hamburguesa a {
+                                            font-size: 10px;
+                                        }
+                                        .hamburguesa li a:hover {
+                                            color: greenyellow;
+                                            background-color: darkblue;
+                                        }
+                                        .enlaces {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            margin-left: 10%;
+                                            padding-bottom: 1%;
+                                            grid-area: enlace;
+                                        }
+                                        .enlaces img {
+                                            width: 30%;
+                                        }
+                                        .enlaces h3 {
+                                            display: none;
+                                        }
+                                        .productos img {
+                                            width: 73%;
+                                            height: auto;
+                                        }
+                                        .productos img:hover {
+                                            height: 80%;
+                                            width: auto;
+                                            position: relative;
+                                        }
+                                        .productos {
+                                            margin-left: 20%;
+                                        }
+                                        footer {
+                                            display: unset;
+                                            text-align: center;
+                                            grid-area: footer;
+                                        }
+                                        .header {
+                                            grid-area: header;
+                                        }
+                                    }
